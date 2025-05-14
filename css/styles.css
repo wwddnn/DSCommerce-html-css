@@ -1,3 +1,26 @@
+
+
+:root { /* para especificar variaveis usamos aqui no comeco o :root, é uma boa  */
+  --dsc-color-bg-primary: #e8e8e8;
+  --dsc-color-bg-secondary: #ffe500;
+  --dsc-color-bg-tertiary: #636363;
+  --dsc-color-bg-quaternary: #0caf1d;
+
+  --dsc-color-card-bg: #fff;
+  --dsc-color-card-border: #d9d9d9;
+
+  --dsc-color-btn-primary: #3483fa;
+  --dsc-color-btn-inverse: #fff;
+
+  --dsc-color-font-primary: #636363;
+  --dsc-color-font-secondary: #0caf1d;
+  --dsc-color-font-tertiary: #fff;
+  --dsc-color-font-placeholder: #d9d9d9;
+
+  --dsc-color-error: #f33;
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -13,7 +36,7 @@ a:hover {
 
 html,
 body {
-  background-color: #e8e8e8;
+  background-color: var(--dsc-color-bg-primary);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -21,12 +44,12 @@ header {
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  background-color: #ffe500;
+  background-color: var(--dsc-color-bg-secondary);
   height: 70px;
 }
 
 nav {
-  color: #636363;
+  color: var(--dsc-color-bg-tertiary);
   display: flex;
   align-items: center;
   justify-content: space-between; /* coloca um texto em cada ponta*/
@@ -39,13 +62,13 @@ nav {
 }
 
 .card {
-  background-color: white;
+  background-color: var(--dsc-color-card-bg);
   border-radius: 4px;
-  border: 1px solid #d9d9d9;
+  border: 1px solid var(--dsc-color-card-border);
 }
 
 .line-bottom {
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid var(--dsc-color-card-border);
 }
 
 .btn-page-container {
@@ -62,19 +85,19 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: var(--dsc-color-card-bg);
   text-align: center;
 }
 
 .btn-blue {
-  background-color: #3483fa;
-  color: #ffffff;
+  background-color: var(--dsc-color-btn-primary);
+  color: var(--dsc-color-card-bg);
 }
 
 .btn-white {
-  background-color: #ffffff;
-  color: #3483fa;
-  border: 1px solid #3483fa;
+  background-color: var(--dsc-color-card-bg);
+  color: var(--dsc-color-btn-primary);
+  border: 1px solid var(--dsc-color-btn-primary);
 }
 
 .mb20 {

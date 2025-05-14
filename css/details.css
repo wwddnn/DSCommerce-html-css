@@ -1,3 +1,5 @@
+@import url("styles.css");
+
 #product-details {
   padding: 20px 0;
 }
@@ -17,18 +19,17 @@
 }
 
 .product-details-bottom h3 {
-  color: #0caf1d;
+  color: var(--dsc-color-font-secondary);
   font-size: 20px;
 }
 
-.product-details-bottom h4,
-p {
-  color: #636363;
+.product-details-bottom h4, p {
+  color: var(--dsc-color-font-primary);
   font-size: 12px;
 }
 
 .product-details-bottom p {
-  color: #636363;
+  color: var(--dsc-color-font-primary);
   font-size: 12px;
   margin: 10px 0;
 }
@@ -40,7 +41,7 @@ p {
 .category {
   height: 30px;
   margin-right: 20px; /* para ficar aquele pequeno espaco entre as categorias*/
-  background-color: #636363;
+  background-color: var(--dsc-color-bg-tertiary);
   border-radius: 4px;
   display: flex;
   justify-content: space-evenly;
@@ -48,5 +49,5 @@ p {
   font-size: 12px;
   font-weight: bold;
   padding: 0 20px;
-  color: #ffffff;
+  color: var(--dsc-color-font-tertiary);
 }

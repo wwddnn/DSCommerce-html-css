@@ -1,3 +1,5 @@
+@import url("styles.css");
+
 #cart-container {
   padding: 20px 0;
 }
@@ -10,7 +12,7 @@
   font-size: 16px;
   font-family: "Open Sans";
   font-weight: bold;
-  color: #0caf1d;
+  color: var(--dsc-color-font-secondary);
 }
 
 .cart-item-container {
@@ -37,20 +39,20 @@
   padding: 10px 0;
   font-size: 12px;
   font-weight: bold;
-  color: #0caf1d;
+  color: var(--dsc-color-font-secondary);
 }
 
 .card-item-description {
   padding: 10px 0;
-  color: #636363;
+  color: var(--dsc-color-font-primary);
 }
-    
+
 .card-item-description h3 {
   font-size: 12px;
 }
 
 .cart-item-quantity-btn {
-  color: #3483fa;
+  color: var(--dsc-color-btn-primary);
   cursor: pointer;
 }
 
