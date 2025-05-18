@@ -1,6 +1,5 @@
-
-
-:root { /* para especificar variaveis usamos aqui no comeco o :root, é uma boa  */
+:root {
+  /* para especificar variaveis usamos aqui no comeco o :root, é uma boa  */
   --dsc-color-bg-primary: #e8e8e8;
   --dsc-color-bg-secondary: #ffe500;
   --dsc-color-bg-tertiary: #636363;
@@ -19,7 +18,6 @@
 
   --dsc-color-error: #f33;
 }
-
 
 * {
   box-sizing: border-box;
@@ -40,6 +38,23 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* ------------------------*/
+/* generic styles */
+
+.dsc-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto; /* centraliza o container*/
+}
+
+.dsc-mb20 {
+  /* quando quiser uma margem bottom coloco esse estilo aqui margin bottom 20px*/
+  margin-bottom: 20px;
+}
+
+/* ------------------------*/
+/* header styles */
+
 header {
   display: flex;
   justify-content: center;
@@ -55,29 +70,39 @@ nav {
   justify-content: space-between; /* coloca um texto em cada ponta*/
 }
 
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto; /* centraliza o container*/
+nav h1 {
+  font-size: 24px;
+  font-weight: 700;
 }
 
-.card {
+nav a {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* ------------------------*/
+/* card styles */
+
+.dsc-card {
   background-color: var(--dsc-color-card-bg);
   border-radius: 4px;
   border: 1px solid var(--dsc-color-card-border);
 }
 
-.line-bottom {
+.dsc-line-bottom {
   border-bottom: 1px solid var(--dsc-color-card-border);
 }
 
-.btn-page-container {
+/* ------------------------*/
+/* btn styles */
+
+.dsc-btn-page-container {
   width: 220px;
   display: grid; /* grid é bom pra criar um container com espaco pequeno entre eles*/
   grid-gap: 20px; /* grid gap complementando o display grid */
 }
 
-.btn {
+.dsc-btn {
   font-size: 16px;
   font-weight: bold;
   height: 42px;
@@ -89,18 +114,13 @@ nav {
   text-align: center;
 }
 
-.btn-blue {
+.dsc-btn-blue {
   background-color: var(--dsc-color-btn-primary);
   color: var(--dsc-color-card-bg);
 }
 
-.btn-white {
+.dsc-btn-white {
   background-color: var(--dsc-color-card-bg);
   color: var(--dsc-color-btn-primary);
   border: 1px solid var(--dsc-color-btn-primary);
-}
-
-.mb20 {
-  /* quando quiser uma margem bottom coloco esse estilo aqui margin bottom 20px*/
-  margin-bottom: 20px;
 }
