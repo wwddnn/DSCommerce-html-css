@@ -38,6 +38,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+main {
+  padding: 0 20px; /* ao redor da tela nas laterais é criado um espaço de 20px */
+}
+
 /* ------------------------*/
 /* generic styles */
 
@@ -61,6 +65,7 @@ header {
   justify-content: space-between;
   background-color: var(--dsc-color-bg-secondary);
   height: 70px;
+  padding: 0 20px;
 }
 
 nav {
@@ -94,12 +99,18 @@ nav a {
 }
 
 /* ------------------------*/
-/* btn styles */
+/* button styles */
 
 .dsc-btn-page-container {
-  width: 220px;
+  width: 100%;
   display: grid; /* grid é bom pra criar um container com espaco pequeno entre eles*/
   grid-gap: 20px; /* grid gap complementando o display grid */
+}
+
+@media (min-width: 576px) { /* quando começamos a fazer mobile first, sempre usamos o min-width, a partir dessa largura quero outro comportamento */
+.dsc-btn-page-container { /* a partir da largura da tela em 576px eu quero que o meu container de botao seja da largura 220px */
+  width: 220px;
+}
 }
 
 .dsc-btn {
