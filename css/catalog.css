@@ -1,0 +1,40 @@
+@import url("styles.css");
+
+#catalog-section {
+  padding: 20px 0;
+}
+
+.dsc-catalog-cards {
+  display: grid; /* com display grip e o grip-gap ajuda a colocar em formato de grade, e com 20px de distancia entre eles */
+  grid-gap: 20px; /* esses 3 css(display grid, grid-gap e grid-template-columns entram juntos, para fazer o grid, é um macete do prof nelio alves */
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr)); /* organiza os cards para que tenham 225px de tamanho */
+}
+
+.dsc-catalog-card-top {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+
+.dsc-catalog-card-top img {
+  width: 150px;
+  height: 150px;
+}
+
+.dsc-catalog-card-bottom {
+  display: block;
+  justify-content: center;
+  padding: 10px 20px;
+  min-height: 110px;
+}
+
+.dsc-catalog-card-bottom h3 { /* h3 e h4 por padrão já estão em negrito*/
+  color: var(--dsc-color-font-secondary);
+  font-size: 20px;
+}
+
+.dsc-catalog-card-bottom h4 { /* h3 e h4 por padrão já estão em negrito*/
+  color: var(--dsc-color-font-primary);
+  font-size: 12px;
+}

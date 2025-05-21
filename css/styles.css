@@ -17,6 +17,7 @@
   --dsc-color-font-placeholder: #d9d9d9;
 
   --dsc-color-error: #f33;
+
 }
 
 * {
@@ -52,8 +53,13 @@ main {
 }
 
 .dsc-mb20 {
-  /* quando quiser uma margem bottom coloco esse estilo aqui margin bottom 20px*/
+  /* quando quiser uma margem bottom no card grandao */
   margin-bottom: 20px;
+}
+
+.dsc-mt20 {
+  /* quando quiser uma margem top no card grandao*/
+  margin-top: 20px;
 }
 
 /* ------------------------*/
@@ -134,4 +140,62 @@ nav a {
   background-color: var(--dsc-color-card-bg);
   color: var(--dsc-color-btn-primary);
   border: 1px solid var(--dsc-color-btn-primary);
+}
+
+.dsc-btn-next-page {
+  border: 1px solid var(--dsc-color-btn-primary);
+  padding: 10px;
+  border-radius: 4px;
+  color: var(--dsc-color-btn-primary);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ------------------------*/
+/* search bar styles */
+
+.dsc-search-bar {
+  height: 40px;
+  display: flex;
+  color: var(--dsc-color-font-primary);
+}
+
+.dsc-search-bar button, .dsc-search-bar input  {
+  border: 1px solid var(--dsc-color-card-border);
+}
+
+.dsc-search-bar input {
+  width: calc(100% - 80px); /* 80px são os dois button somandos */
+  border-right: none;
+  border-left: none;
+  padding: 0 10px;
+  font-size: 16px;
+  color: var(--dsc-color-font-primary);
+  
+}
+
+.dsc-search-bar input:focus { /* focus é quando o mouse passa nele */
+  outline: none; /* outline none é pra tirar o rachurado quando passa o mouse em cima*/
+}
+
+.dsc-search-bar input::placeholder {
+  color: var(--dsc-color-font-placeholder);
+}
+
+
+.dsc-search-bar button {
+  width: 40px;
+  color: var(--dsc-color-font-primary);
+}
+
+.dsc-search-bar button[type="submit"] { /* button que esta dentro do dsc-search-bar e é do tipo submit */
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.dsc-search-bar button[type="reset"] { /* button que esta dentro do dsc-search-bar e é do tipo reset */
+  border-left: none;
+  border-radius: 0 4px 4px 0;
 }
