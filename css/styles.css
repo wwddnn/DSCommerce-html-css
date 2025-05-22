@@ -90,6 +90,17 @@ nav a {
   font-weight: 700;
 }
 
+.dsc-logged-user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* alinha os itens a direita, nesse caso os textos a direita*/
+}
+
+.dsc-logged-user p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
 /* ------------------------*/
 /* card styles */
 
