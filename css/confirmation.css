@@ -11,9 +11,9 @@
   text-align: center;
 }
 
-@media (min-widh:576px) { /* colocamos somente o que é diferente do mobile, pois aqui é pra formato desktp, o que muda é fonte e text-align */
+@media (min-width:576px) { /* colocamos somente o que é diferente do mobile, pois aqui é pra formato desktp, o que muda é fonte e text-align */
   .dsc-confirmation-message {
-  font-size: 24x;
+  font-size: 24x; /* quando a tela fica em 576px pra cima, a fonte aumenta e texto fica a esquerda*/
   text-align: left;
   }
 }
